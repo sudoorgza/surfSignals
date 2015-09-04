@@ -32,7 +32,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
+  .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
@@ -50,36 +50,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
-        }
-      }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
-    })
-
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.flag-signals', {
+    url: '/flag-signals',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-flag-signals': {
+        templateUrl: 'templates/tab-flag-signals.html',
+        controller: 'FlagSignalsCtrl'
+      }
+    }
+  })
+
+  .state('tab.board-signals', {
+    url: '/board-signals',
+    views: {
+      'tab-board-signals': {
+        templateUrl: 'templates/tab-board-signals.html',
+        controller: 'BoardSignalsCtrl'
       }
     }
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/hand-signals');
 
 });

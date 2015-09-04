@@ -1,8 +1,10 @@
 angular.module('starter.controllers', [])
 
-.controller('HandSignalsCtrl', function($scope) {})
+.controller('HandSignalsCtrl', function($scope, Signals) {
+  $scope.signals = Signals.allOfType("hand");
+})
 
-.controller('ChatsCtrl', function($scope, Chats) {
+.controller('FlagSignalsCtrl', function($scope, Signals) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -11,18 +13,17 @@ angular.module('starter.controllers', [])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
+  $scope.signals = Signals.allOfType("flag");
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
+.controller('BoardSignalsCtrl', function($scope, Signals) {
+  // With the new view caching in Ionic, Controllers are only called
+  // when they are recreated or on app start, instead of every page change.
+  // To listen for when this page is active (for example, to refresh data),
+  // listen for the $ionicView.enter event:
+  //
+  //$scope.$on('$ionicView.enter', function(e) {
+  //});
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+  $scope.signals = Signals.allOfType("board");
 });

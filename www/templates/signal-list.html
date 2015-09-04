@@ -1,0 +1,15 @@
+
+      <div class="list card" ng-repeat="signal in signals">
+        <div class="item item-divider">{{signal.name}}</div>
+        <div class="item item-body">
+          <div class="item item-thumbnail-left">
+            <img ng-src="{{signal.image}}">
+            <h2>Action</h2>
+            {{signal.action}}
+          </div>
+          <div>
+            <h2>Meaning</h2>
+            {{signal.meaning}}
+          </div>
+        </div>
+      </div>
