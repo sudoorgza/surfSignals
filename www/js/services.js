@@ -10,7 +10,7 @@ angular.module('starter.services', [])
     name: 'Assistance Required',
     action: 'One arm waved to and fro above the head',
     meaning: 'The lifeguard in the water needs further assistance. This may be \
-      due to a badly panicking patient, , multiple patients or an injury to the \
+      due to a badly panicking patient, multiple patients or an injury to the \
       lifeguard sustained in the response. Backup by rescue craft or other \
       swimmers is required immediately.',
     image: 'img/hand-signals/assistance-required.jpg'

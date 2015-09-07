@@ -1,4 +1,12 @@
 {
-  "name": "surfSignals",
-  "app_id": ""
+  "name": "Surf Signals",
+  "app_id": "1c67d021",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }

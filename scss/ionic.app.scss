@@ -15,9 +15,32 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$light:                           #2196F3 !default;
+$stable:                          #2196F3 !default;
+//$positive:                        #387ef5 !default;
+$positive:                        #fff !default;
+$calm:                            #BBDEFB !default;
+//$balanced:                        #727272 !default;
+$energized:                       #FFFDDA !default;
+$assertive:                       #FF5722 !default;
+//$royal:                           #B6B6B6 !default;
+$dark:                            #fff !default;
+
+//$bar-positive-bg:                   #2196F7 !default;
+//$bar-positive-text:                 #fff !default;
+//$bar-positive-active-bg:            #2196F4 !default;
+//$bar-positive-border:               #2196F5 !default;
+//$bar-positive-active-border:        #2196F6 !default;
+
+//$tabs-positive-text:                #2196F7 !default;
+$button-stable-text:                 #fff !default;
+//$button-calm-text:                #1976D2 !default;
+//$item-divider-bg:                 #BBDEFB !default;
+$item-divider-bg:                 #FF5722 !default;
+$item-divider-color:              #fff !default;
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-
