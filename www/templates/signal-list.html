@@ -1,14 +1,17 @@
 
       <div class="list card" ng-repeat="signal in signals">
         <div class="item item-divider">{{signal.name}}</div>
-        <div class="item-light item-body">
-          <div class="item item-positive item-thumbnail-left">
+        <div class="item-dark item-body">
+          <div class="item item-dark item-thumbnail-left">
             <img class="item-light" ng-src="{{signal.image}}">
-            <p>{{signal.action}}</p>
+            <p>{{signal.action}}
+              <br>
+              <a href="" style="float:right" ng-hide="showDef" ng-click="showDef = true">...more</a>
+              <a href="" style="float:right" ng-show="showDef" ng-click="showDef = false">...less</a>
+            </p>
           </div>
-          <div class="item item-energized">
-            <button class="button button-stable" ng-hide="showDef" ng-click="showDef = true">Show details</button>
-            <p ng-show="showDef" ng-click="showDef = false"><b>Meaning</b><br>{{signal.meaning}}</p>
+          <div class="item item-energized" ng-show="showDef">
+            <p ng-click="showDef = false"><b>Meaning</b><br>{{signal.meaning}}</p>
           </div>
         </div>
       </div>
