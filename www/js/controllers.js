@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('PopOverCtrl', function($scope, $ionicPopover) {
+.controller('AboutPopOverCtrl', function($scope, $ionicPopover) {
   $ionicPopover.fromTemplateUrl('templates/about-popover.html', {
     scope: $scope
   }).then(function(popover) {
