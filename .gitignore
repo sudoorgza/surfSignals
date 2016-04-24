@@ -6,3 +6,7 @@ platforms/
 plugins/
 www/css/ionic.app.css
 www/css/ionic.app.min.css
+resources/ios/
+resources/android/
+sudo-surf-signals.keystore
+SurfSignals.apk
